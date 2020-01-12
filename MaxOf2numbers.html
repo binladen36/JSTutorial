@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Study JS</title>
+</head>
+<body>
+
+    Input X
+    <input type="text" name="" id="x">
+    <br/>
+    Input Y 
+    <input type="text" name="" id="y">
+    <br>
+    
+    <input type="button" value="OK" onclick="Hi()">
+    
+    
+    <script>
+        function Hi(){
+            let x = document.getElementById('x').value;
+            let y = document.getElementById('y').value;
+
+            if(!isNaN(x)){
+                alert('x must be a number');
+                return;
+            }
+
+            if(!isNaN(y)){
+                alert('y must be a number');
+                return;
+            }
+
+            if((x)>(y)){
+                alert('X is higher');
+                return;
+            }
+
+            if((y)>(x)){
+                alert('Y is higher');
+                return;
+            }
+
+
+            if((x)==(y)){
+                alert('X = Y');
+                return;
+            }
+
+            
+
+          
+        }
+    </script>
+</body>
+</html>
