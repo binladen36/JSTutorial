@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Multiplication</title>
+</head>
+<body>
+    Enter your n number:
+    <input type="text" name="" id="n">
+    <input type="button" value="OK" onclick="printN()">
+    <p id="status"></p>
+    <script>
+        function printN()
+        {
+            let n = document.getElementById("n").value;
+            var message = '';
+            for (let i = 0; i < 11; i++)
+            {
+                document.write(`${n} x ${i} = ${n*i} <br>`);
+                
+            }
+        }
+        document.getElementById('status').innerHTML = message;
+    </script>
+
+    
+
+</body>
+</html>
