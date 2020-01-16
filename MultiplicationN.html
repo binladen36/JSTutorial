@@ -11,20 +11,25 @@
     <input type="text" name="" id="n">
     <input type="button" value="OK" onclick="printN()">
     <p id="status"></p>
+
     <script>
         function printN()
         {
             let n = document.getElementById("n").value;
-            let message = '';
-            for (let i = 0; i < 11; i++)
-                
+            var message = '';
+            for (let i = 1; i <= n; i++) //chay so n nhap vao
             {
-                
-                document.write(`${n} x ${i} = ${n*i} <br>`);
-                
+                message +='<div style = "float: left; width: 100px;">' //chinh cac cot deu nhau
+                for (let j = 1; j <= 10; j++) //chay so tronn n
+                {
+                    message += `${i} * ${j} = ${i*j} <br>`;
+
+                }
+                message += '</div>';
             }
-        }
+        
         document.getElementById('status').innerHTML = message;
+        }
     </script>
 
     
